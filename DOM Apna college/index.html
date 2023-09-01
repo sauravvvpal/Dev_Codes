@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <!-- <ul id="element" data="valid">
+        <li class="list-item">first</li>
+        <li class="list-item">second</li>
+        <li class="list-item">third</li>
+    </ul>
+    <div class="firstDiv">first Div</div>
+    <table>
+        <tr>
+            <td>one </td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+    </table> -->
+
+    <button class="clickBtn" onclick="alert('NAmAstey')" >click me</button>
+    <button class="clickme">press</button>
+    
+    <script>
+// root node
+//    console.log(document.documentElement);
+//    console.log(document.body);
+//    console.log(document.head);
+
+//    // children
+//    console.log(document.body.childNodes);
+//    console.log(document.body.children);  // gives html collections
+//    console.log(document.body.firstChild);
+//    console.log(document.body.lastChild);
+//    console.log(document.body.firstElementChild);
+//    console.log(document.body.lastElementChild);
+   
+//    // to convert in array
+//    const arr= Array.from(document.body.children);
+//    console.log(arr);
+
+//    // siblings
+//    const ultag= document.body.children[0];
+//    const firstli=ultag.children[0];
+//    const secondli= ultag.children[1];
+//    console.log(ultag.nextSibling);
+//    console.log(ultag.nextElementSibling);
+//    console.log(secondli.previousElementSibling.textContent);
+
+   // Table Dom Manipulation
+//    const tabletag=document.body.children[1];
+//    console.log(tabletag);
+//    console.log(tabletag.tBodies);
+//    console.log(tabletag.tBodies[0].rows);
+//    console.log(tabletag.tBodies[0].rows[0].cells);
+//    console.log(tabletag.tBodies[0].rows[0].cells[1].textContent);
+//    console.log(tabletag.tBodies[0].rows[0].cells[1].style="background-color:blue");
+
+// ID Search
+// element.style.background="red";
+// const ulTag=document.getElementById('element');
+// ulTag.style.backgroundColor='orange';
+
+// listitem= document.getElementsByClassName('list-item');
+// console.log(listitem);
+// console.log(document.getElementsByTagName('table'));
+
+// Query Selector
+// console.log(document.querySelector('.list-item'));
+// console.log(document.querySelectorAll('.listitem'));
+// console.log(document.querySelector('#element'));
+
+// ul ke andar li ka last child
+// const lastchild= document.querySelectorAll('ul>li:last-child');
+// console.log(lastchild[0].textContent);
+
+// const nthchild= document.querySelectorAll('ul>li:nth-child(2)');
+// console.log(nthchild[0].textContent);
+
+// Attributes
+// console.log(element.id);
+// console.log(element.getAttribute('data'));  //valid
+// console.log(element.setAttribute('place-order','pending'));
+// console.log(element.getAttribute('place-order')); // pending
+// console.log(element.hasAttribute('place-order')); // true
+// console.log(element.removeAttribute('place-order'));
+// console.log(element.hasAttribute('place-order'));  // false
+// console.log(element.attributes);
+
+// Creating and removing Node element
+
+// const newDiv= document.createElement('div');
+// const newText= document.createTextNode('Namaste Bhai');
+// newDiv.appendChild(newText);
+// body.append(newDiv);
+// body.prepend(newDiv);
+// body.before(newDiv);
+// body.after(newDiv);
+
+// firstDiv.replaceWith(newDiv);
+// firstDiv.remove();
+
+// newDiv.textContent='namastey';
+// function callme(){
+//     alert("thanks for watching");
+// }
+ //clickBtn.onclick = callme;
+
+//  clickBtn.addEventListener('click',callme);
+//  clickBtn.addEventListener('click',function(){alert("thanks")});
+
+function dabao(event){
+    console.log(event.type);
+    console.log(event.currentTarget);
+    console.log(event.clientX);
+    console.log(event.clientY);
+    alert("shukriya");
+}
+
+clickme.addEventListener("click",dabao);
+
+ 
+    </script>
+</body> 
+</html>

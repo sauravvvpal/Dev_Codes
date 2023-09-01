@@ -1,0 +1,28 @@
+/* #cv-form{
+    display: none;
+    } */
+    
+.myimg{
+    border-radius: 50%;
+    width: 200px;
+}
+
+.backgroud{
+    background-color: aqua;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 20px;
+    font-size: 17px;
+    padding: 8px;
+}
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+}
+

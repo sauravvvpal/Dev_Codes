@@ -1,0 +1,56 @@
+/* type selector */
+h1{
+    color:#ffffff;
+}
+p{
+    color: chartreuse;
+}
+/* attribute selector */
+a[href="https://google.com"]{
+    color: red;
+}
+/* to change the lisy style */
+ul{
+    list-style: square;
+}
+/* class selector */
+li.special,h2.special{
+    color: blueviolet;
+}
+/* descendent combinator- ek type ke element ke neeche doosre type ke element ko select 
+krna eg- p tag ke neeche em tag ko select krna */
+p em{
+    color: aqua;
+}
+/* adjacent combinator - isse basically aapko aapka next sibling mil jaega */
+
+h1+h2{
+    color: chocolate;
+}
+/* pseudo class selector */
+:hover{
+    color: black;
+    text-decoration: solid;
+}
+/* attribute selector */
+li[class="a"]
+{
+    color: brown;
+}
+li[class~="b"] /* isse b waali class select ho jaengi*/
+{
+    color: blue;
+}
+ul{
+    background-color: aquamarine;
+    list-style-type:lower-greek;
+    list-style-position: outside;
+
+}
+table,td,th,{
+    border:2px solid black;
+    border-collapse: separate;
+    padding:10px;
+    background-color: bisque;
+}
+
